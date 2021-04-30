@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        Name: Nikolin Mele
+        Date Created: 04/20/2021
+        Date modified: 04/30/2021
+    -->
+    <head>
+        <!--Head-->
+        <title>Calculator</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/script.js" defer></script>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <!--Body-->
+    <body>
+        <div class="calculator">
+
+            <input id="display" readonly>
+               
+            <button class="row1" onclick="insert('+')">+</button>
+            <button class="row1" onclick="insert('-')">-</button>
+            <button class="row1" onclick="insert('*')">x</button>
+            <button class="row1" onclick="insert('/')">÷</button>
+            
+            <button class="row" onclick="insert('7')">7</button>
+            <button class="row" onclick="insert('8')">8</button>
+            <button class="row" onclick="insert('9')">9</button>
+            <button class="span4" onclick="equal()">=</button>
+
+            <button class="row" onclick="insert('4')">4</button>
+            <button class="row" onclick="insert('5')">5</button>
+            <button class="row" onclick="insert('6')">6</button>
+
+            <button class="row" onclick="insert('1')">1</button>
+            <button class="row" onclick="insert('2')">2</button>
+            <button class="row" onclick="insert('3')">3</button>
+
+            <button class="row" onclick="insert('0')">0</button>
+            <button class="row" onclick="insert('.')">.</button>
+            <button class="row" onclick="clean()">C</button>
+        </div>     
+    </body>
+</html>

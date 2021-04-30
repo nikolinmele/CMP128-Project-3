@@ -1,0 +1,89 @@
+/*
+CSS Style
+Name: Nikolin Mele
+Date Created: 04/21/2021
+Date modified: 04/29/2021
+*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family:sans-serif;
+    font-weight: normal;
+}
+  
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.calculator{
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    padding: 15px;
+    position: relative;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 60px);
+}
+
+.calculator > button{   
+    font-size: 2rem;
+    border: 1px solid #bbb; 
+    
+}
+
+.row1{
+    background-color: #DDDD;
+}
+
+.row1:hover{
+    background-color: #f9f9f9;
+}
+
+.row{
+    background-color: #f9f9f9;
+}
+
+.row:hover{
+    background-color: #DDD;
+}
+
+.span4{
+    grid-row: span 4;
+    border: 1px solid #3079ED;
+    border-radius: 1px;
+    background-color:#4C8FFE;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+}
+
+.span4:hover{
+    background-color: #307CF9;
+}
+
+#display{
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    height: 100px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    grid-column: span 4;
+    row-gap: 10px;
+}
+
+#display:hover {
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+
